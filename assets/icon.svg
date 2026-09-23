@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Warm Paper">
+  <rect width="64" height="64" rx="16" fill="#f7f1e3"/>
+  <rect x="13" y="10" width="38" height="44" rx="5" fill="#fffdf6" stroke="#ddcfae" stroke-width="2"/>
+  <path d="M21 23h22M21 31h22M21 39h15" fill="none" stroke="#6f6250" stroke-linecap="round" stroke-width="3"/>
+  <path d="M38 47l4-10 4 10-4-2z" fill="#b45309"/>
+</svg>

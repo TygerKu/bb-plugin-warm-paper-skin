@@ -1,0 +1,38 @@
+{
+  "name": "bb-plugin-warm-paper-skin",
+  "version": "0.1.0",
+  "description": "A BB theme inspired by the Warm Paper palette from pi-web-ui.",
+  "keywords": ["bb", "bb-plugin", "theme", "warm-paper", "light"],
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.43",
+    "bbPluginSdk": ">=0.4.87"
+  },
+  "bb": {
+    "name": "Warm Paper",
+    "description": "A warm, parchment-like light palette matching pi-web-ui's Warm Paper theme.",
+    "branding": {
+      "icon": "./assets/icon.svg"
+    },
+    "server": "./server.ts",
+    "themes": [
+      {
+        "id": "warm-paper",
+        "name": "Warm Paper",
+        "description": "The Warm Paper palette: cream canvas, parchment surfaces, and amber accents.",
+        "css": "./themes/warm-paper.css"
+      }
+    ],
+    "skills": []
+  },
+  "files": ["dist/server.js", "dist/server.meta.json", "themes/", "assets/", "README.md", "server.ts"],
+  "dependencies": {},
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.5.9",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "build": "bb plugin build ."
+  }
+}

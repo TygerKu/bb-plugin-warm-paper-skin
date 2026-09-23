@@ -1,0 +1,121 @@
+/* Warm Paper — palette adapted from pi-web-ui/themes/paper.css.
+ * BB's theme is token-driven; keeping the same three surface anchors and ink
+ * values gives the entire interface one coherent parchment palette.
+ */
+:root,
+.light,
+.dark {
+  color-scheme: light;
+
+  /* Core canvas, elevated surfaces, and text */
+  --canvas: #f7f1e3;
+  --background: var(--canvas);
+  --ink: #3f372c;
+  --foreground: var(--ink);
+  --card: #fffdf6;
+  --card-foreground: var(--ink);
+  --popover: #fffdf6;
+  --popover-foreground: var(--ink);
+  --sidebar: #fffdf6;
+  --sidebar-foreground: var(--ink);
+
+  /* Amber accent and interactive states */
+  --primary: #b45309;
+  --primary-foreground: #fffdf6;
+  --accent: #efe7d3;
+  --accent-foreground: var(--ink);
+  --secondary: #efe7d3;
+  --secondary-foreground: var(--ink);
+  --state-hover: rgba(120, 90, 30, 0.08);
+  --state-active: rgba(120, 90, 30, 0.15);
+  --ring: #b45309;
+  --sidebar-accent: #efe7d3;
+  --sidebar-accent-foreground: var(--ink);
+
+  /* Text hierarchy */
+  --muted: #efe7d3;
+  --muted-foreground: #6f6250;
+  --subtle-foreground: #6c5a41;
+  --readback-foreground: #6f6250;
+
+  /* Borders and controls */
+  --border: #ddcfae;
+  --border-hairline: #ded1b3;
+  --border-seam: #ddcfae;
+  --border-seam-vertical: var(--border-seam);
+  --sidebar-border: #ddcfae;
+  --input: #ddcfae;
+
+  /* Surfaces used by nested panels, menus, and selected rows */
+  --surface-recessed: rgba(120, 90, 30, 0.05);
+  --surface-recessed-solid: #f3ecd9;
+  --surface-recessed-soft-solid: #f4eedc;
+  --surface-raised: rgba(120, 90, 30, 0.03);
+  --surface-raised-solid: #f8f3e7;
+  --surface-scrim: rgba(247, 241, 227, 0.92);
+  --surface-selected: rgba(180, 83, 9, 0.12);
+  --surface-selected-border: rgba(180, 83, 9, 0.35);
+  --sidebar-search-match: #f0dfb9;
+  --sidebar-search-match-border: #e2c993;
+
+  /* Semantic colors */
+  --destructive: #b91c1c;
+  --destructive-foreground: #fffdf6;
+  --destructive-text: #b91c1c;
+  --success: #15803d;
+  --success-foreground: #fffdf6;
+  --warning: #d97706;
+  --warning-text: #92400e;
+  --attention: #d97706;
+  --diff-added: #15803d;
+  --diff-removed: #b91c1c;
+  --pr-merged: #9333ea;
+  --file-accent: #1d4ed8;
+  --timeline-accent: #9a3412;
+
+  /* Typography and shape */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --radius: 0.625rem;
+
+  /* Terminal ANSI palette, matching Warm Paper's terminal colors */
+  --ansi-0: #e2d5b8;
+  --ansi-1: #b91c1c;
+  --ansi-2: #15803d;
+  --ansi-3: #a16207;
+  --ansi-4: #1d4ed8;
+  --ansi-5: #9333ea;
+  --ansi-6: #0e7490;
+  --ansi-7: #3f372c;
+  --ansi-8: #6c5a41;
+  --ansi-9: #b91c1c;
+  --ansi-10: #15803d;
+  --ansi-11: #a16207;
+  --ansi-12: #1d4ed8;
+  --ansi-13: #9333ea;
+  --ansi-14: #0e7490;
+  --ansi-15: #1c1917;
+  --ansi-bg-fg-0: #3f372c;
+  --ansi-bg-fg-1: #fffdf6;
+  --ansi-bg-fg-2: #fffdf6;
+  --ansi-bg-fg-3: #fffdf6;
+  --ansi-bg-fg-4: #fffdf6;
+  --ansi-bg-fg-5: #fffdf6;
+  --ansi-bg-fg-6: #fffdf6;
+  --ansi-bg-fg-7: #fffdf6;
+  --ansi-bg-fg-8: #fffdf6;
+  --ansi-bg-fg-9: #fffdf6;
+  --ansi-bg-fg-10: #fffdf6;
+  --ansi-bg-fg-11: #fffdf6;
+  --ansi-bg-fg-12: #fffdf6;
+  --ansi-bg-fg-13: #fffdf6;
+  --ansi-bg-fg-14: #fffdf6;
+  --ansi-bg-fg-15: #fffdf6;
+
+  /* Diff viewers consume their own bridge variables. */
+  --diffs-light-bg: #fffdf6;
+  --diffs-light: #3f372c;
+  --diffs-light-addition-color: #15803d;
+  --diffs-light-deletion-color: #b91c1c;
+}
